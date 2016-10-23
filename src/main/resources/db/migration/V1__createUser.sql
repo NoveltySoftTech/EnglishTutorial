@@ -1,0 +1,10 @@
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  first_name VARCHAR(100) NOT NULL,
+  last_name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  role VARCHAR(10) NOT NULL,
+  created_date DATETIME NOT NULL,
+  updated_date DATETIME NULL,
+  is_active INT NOT NULL DEFAULT 0,
+  UNIQUE INDEX email_UNIQUE (email ASC));
